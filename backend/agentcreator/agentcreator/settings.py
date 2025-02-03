@@ -40,7 +40,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework_simplejwt.token_blacklist',  # Optional: for token blacklisting
-    'users'
+    'users',
+    'corsheaders'
+
+]
+
+# settings.py
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # Example: React development server
+    "https://your-domain.com",
 ]
 
 MIDDLEWARE = [
@@ -51,6 +59,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # Add this (best placed at the top)
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'agentcreator.urls'
