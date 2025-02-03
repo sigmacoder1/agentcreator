@@ -129,6 +129,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
   const { theme, toggleTheme } = React.useContext(ThemeContext);
+  toggleTheme('system');
 
   return (
     <>
@@ -137,7 +138,7 @@ const Header = () => {
           <div className="flex items-center space-x-4">
             <Bot size={32} className="text-blue-600" />
             <h1 className="text-xl font-bold text-gray-800 dark:text-white">
-              AgentForge
+              AGI Mesh
             </h1>
           </div>
 
@@ -209,9 +210,9 @@ const Header = () => {
 
 // Main Content Component with Scrollable Cards
 const MainContent = () => {
-  const dummyCards = Array(20).fill(null).map((_, index) => ({
+  const dummyCards = Array(15).fill(null).map((_, index) => ({
     id: index,
-    title: `AI Agent ${index + 1}`,
+    title: `GPT ${index + 1}`,
     description: 'Automate complex tasks with custom AI agents',
     icon: Bot
   }));
@@ -221,7 +222,7 @@ const MainContent = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
-            Create AI Agents in Minutes
+            Create AI Agents Network in Minutes
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             Empower your business with custom AI agents that automate complex workflows and enhance productivity.
@@ -261,7 +262,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h4 className="text-xl font-bold mb-4 text-gray-800 dark:text-white">AgentForge</h4>
+            <h4 className="text-xl font-bold mb-4 text-gray-800 dark:text-white">AGI Mesh</h4>
             <p className="text-gray-600 dark:text-gray-300">
               Revolutionize your business with AI-powered automation
             </p>
@@ -286,14 +287,14 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">Connect</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Contact Us</a></li>
-              <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Twitter</a></li>
-              <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">LinkedIn</a></li>
+              <li><a href="www.x.com" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Twitter</a></li>
+              <li><a href="www.linkedin.com" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">LinkedIn</a></li>
             </ul>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t dark:border-gray-800 text-center">
           <p className="text-gray-600 dark:text-gray-300">
-            © 2024 AgentForge. All rights reserved.
+            © 2025 AGIMesh. All rights reserved.
           </p>
         </div>
       </div>
