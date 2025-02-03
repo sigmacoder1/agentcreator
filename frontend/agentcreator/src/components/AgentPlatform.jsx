@@ -135,13 +135,14 @@ const Header = () => {
     <>
       <header className="fixed w-full top-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <a href="https://agimesh.in" rel="noopener noreferrer">
           <div className="flex items-center space-x-4">
             <Bot size={32} className="text-blue-600" />
             <h1 className="text-xl font-bold text-gray-800 dark:text-white">
               AGI Mesh
             </h1>
           </div>
-
+        </a>
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Features</a>
@@ -151,7 +152,7 @@ const Header = () => {
 
           <div className="flex items-center space-x-4">
             {/* Theme Toggle */}
-            <div className="flex bg-gray-100 dark:bg-gray-800 rounded-full p-1">
+            {/* <div className="flex bg-gray-100 dark:bg-gray-800 rounded-full p-1">
               <button
                 onClick={() => toggleTheme('light')}
                 className={`p-2 rounded-full ${theme === 'light' ? 'bg-white shadow-md' : ''}`}
@@ -170,7 +171,7 @@ const Header = () => {
               >
                 <Monitor size={20} className="text-gray-600 dark:text-gray-300" />
               </button>
-            </div>
+            </div> */}
 
             {/* Auth Buttons */}
             <div className="flex space-x-2">
@@ -286,9 +287,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-gray-800 dark:text-white">Connect</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Contact Us</a></li>
-              <li><a href="www.x.com" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">Twitter</a></li>
-              <li><a href="www.linkedin.com" className="text-gray-600 dark:text-gray-300 hover:text-blue-600">LinkedIn</a></li>
+            <li><a href="#" className="text-gray-600 dark:text-gray-300 hover:text-blue-600" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+            <li><a href="https://www.x.com" className="text-gray-600 dark:text-gray-300 hover:text-blue-600" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/mr-ayush-raj/" className="text-gray-600 dark:text-gray-300 hover:text-blue-600" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
             </ul>
           </div>
         </div>
